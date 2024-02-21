@@ -1,0 +1,363 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #180326;
+}
+
+    
+
+header {
+    font-family: "Protest Riot", sans-serif;
+    background-color: #A882B6; /* Morado oscuro */
+    color: #3B073E; /* Azul claro */
+    padding: 1px;
+    border-radius: 25px;
+    font-size: 700px;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    }
+
+@keyframes cambioColor {
+  0% { color: #3B073E; } /* Inicial */
+  50% { color: #7F3F97; } /* Color intermedio */
+  100% { color: #B884CB; } /* Final */
+}
+
+@keyframes cambioTamaño {
+  0% { font-size: 50px; } /* Inicial */
+  50% { font-size: 60px; } /* Tamaño intermedio */
+  100% { font-size: 70px; } /* Final */
+}
+
+@keyframes parpadeo {
+  0% { opacity: 1; } /* Visible */
+  50% { opacity: 0; } /* Invisible */
+  100% { opacity: 1; } /* Visible */
+}
+
+header h1 {
+  animation: cambioColor 5s infinite alternate, cambioTamaño 3s infinite alternate
+}
+
+header p {
+    font-family: "Josefin Sans", sans-serif;
+    color: #3B073E; /* Azul claro */
+    font-size: 45px;
+    animation: parpadeo 1s infinite; 
+}
+
+.contenedor {
+    max-width: 100%;
+    margin: 100px auto;
+    padding: 100px;
+    background-color: #535054;
+    border-radius: 100px;
+    animation: cambioColor 5s infinite alternate, cambioTamaño 3s infinite alternate;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+      font-family: "Protest Revolution", sans-serif;
+    text-align: center;
+     font-size: 80px;
+    color: #710D89 ;
+}
+
+.mapa-conceptual {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+}
+
+/* Definición de la animación para el cambio de color */
+@keyframes cambioColoruwu {
+    0% { background-color: #A882B6; } /* Color inicial */
+    25% { background-color: #FF5733; } /* Primer color */
+    50% { background-color: #2E86C1; } /* Segundo color */
+    75% { background-color: #1ABC9C; } /* Tercer color */
+    100% { background-color: #F1C40F; } /* Cuarto color */
+}
+
+/* Estilos para cada sección */
+.seccion {
+
+  position: relative; /* Permitir el posicionamiento relativo */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    width: 7.5cm;
+    height: 13cm;
+    padding: 60px;
+    background-color: #A882B6; /* Color inicial */
+    border-radius: 20px;
+    box-shadow: 0 0 10cm rgba(0, 0, 0, 0.1);
+animation: cambioColoruwu 20s infinite alternate;
+    /* Duración total de la animación y alternancia */
+}
+
+/* Aplicar la animación solo a las secciones impares */
+.seccion:nth-child(odd) {
+    animation-delay: 5s; /* Retraso de 5 segundos para las secciones impares */
+}
+/* Estilos para los 
+/* Estilos para los títulos */
+.seccion h3 {
+   color: white !important; /* Color del texto */
+    font-size: 20px; /* Tamaño de la fuente */
+    margin: 10px auto; /* Margen alrededor del título */
+    text-align: center; /* Alineación del texto al centro */
+    visibility: hidden; /* Ocultar el título por defecto */
+
+
+/* Ajusta el margen superior para separar el título del borde superior de la sección */
+}
+.imagen-seccion {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    border-radius: 130px;
+    margin-bottom: 2px; /* Ajusta el margen inferior para separar la imagen del texto */
+    animation: cambioColoruwu 20s infinite alternate; /* Duración total de la animación y alternancia */
+}
+
+.seccion:hover h3 {
+    visibility: visible;
+}
+
+
+/* Estilos para las imágenes */
+
+/* Estilos para las imágenes dentro de las secciones */
+.seccion img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+    border-radius: 130px;
+    margin-bottom: 10px; /* Ajusta el margen inferior para separar la imagen del texto */
+    margin-top: -1cm; /* Ajusta el margen superior para separar la imagen del título */
+    animation: cambioColoruwu 20s infinite alternate; /* Duración total de la animación y alternancia */
+    
+    /* Centrar la imagen horizontal y verticalmente */
+    display: block; /* Para que funcione el margin: auto; */
+    margin: auto; /* Centrar horizontalmente */
+}
+
+
+/* Al hacer hover, aumentar el tamaño */
+.seccion:hover {
+    transform: scale(1.1);
+}
+.seccion:hover {
+    background-color: #37085B ; /* Cambiar el color de fondo al naranja cuando se pasa el cursor */
+}
+
+
+@keyframes pulsacion {
+  0% { transform: scale(0.9); } /* Escala normal */
+  50% { transform: scale(1.1); } /* Escala aumentada */
+  100% { transform: scale(0.9); } /* Escala normal */
+}
+
+.title {
+
+      animation: pulsacion 1s infinite;
+    position: absolute;
+    color: #7F3F97;
+    font-size: 45px;
+    width: 100%;
+    height: 100px;
+    font-family: "Sixtyfour", sans-serif;
+   
+}
+
+@keyframes aparicion {
+  0% { opacity: 0; transform: translateY(-50px); } /* Comienza transparente y arriba */
+  100% { opacity: 1; transform: translateY(0); } /* Termina completamente visible y en su posición final */
+}
+.subtitle h5 {
+
+
+     animation: aparicion 1s ease forwards; /* Aplica la misma animación de aparición */
+  font-family: "Carter One", system-ui;
+  position: absolute; /* Cambiado a absolute */
+  top: 78%; /* Centrado verticalmente */
+  left: 0%; /* Centrado horizontalmente */
+  transform: translateX(-50%);
+  color: #B884CB;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+section {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 850px;
+    background-color: #0A070C;
+}
+
+section img {
+    border-radius: 25px;
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+@keyframes recorrido {
+  0% { left: -100%; } /* Comienza fuera del área visible hacia la izquierda */
+  100% { left: 100%; } /* Termina fuera del área visible hacia la derecha */
+}
+
+
+.espaciado-entre-palabras {
+        word-spacing: 8cm; /* Ajusta el valor según sea necesario */
+    }
+
+
+footer {
+    border-radius: 25px;
+    background-color: #A882B6;
+    font-family: "Young Serif", serif;
+    text-align: center;
+    padding: 10px;
+    width: 99.9%;
+    color: #1C13D0;
+    font-size: 50px;
+    position: relative; /* Cambiado a relativo */
+}
+
+
+.animacion-lineal {
+    position: absolute;
+    top: 50%;
+    left: -100%; /* Inicia fuera del área visible hacia la izquierda */
+    animation: recorrido 20s linear infinite; /* La animación dura 5 segundos y se repite infinitamente */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    font-size: 24px;
+}
+
+@keyframes recorrido {
+    0% { left: -25%; } /* Comienza fuera del área visible hacia la izquierda */
+    100% { left: 15%; } /* Termina fuera del área visible hacia la derecha */
+}
+
+
+.animacion-lineal {
+    position: relative; /* Cambiado a relativo */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+.animacion-lineal p {
+    animation: recorrido 5s linear infinite; /* Aplica la animación al párrafo */
+    font-size: 24px;
+}
+
+.fondogris {
+    border-radius: 25px; /* Agrega esquinas redondeadas a la sección */
+    background-color: #0A070C; /* Establece el color de fondo a un gris oscuro */
+    width: 100%; /* Hace que la sección ocupe todo el ancho de su contenedor */
+    padding: 20px; /* Añade un espacio de relleno interno */
+    color: white; /* Establece el color del texto a blanco */
+    font-family: "Protest Riot", sans-serif; /* Establece la familia de fuentes */
+    display: flex; /* Habilita el diseño de flexbox */
+    flex-direction: column; /* Ordena los elementos flexibles verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+.fondogrisuwu {
+    font-size: 37px; /* Establece el tamaño de la fuente */
+    color: white; /* Establece el color del texto a blanco */
+    font-family: "Outfit", sans-serif; /* Establece la familia de fuentes */
+    margin-bottom: 20px; /* Agrega espacio debajo del texto */
+}
+
+.fondogris h1 {
+     font-family: "Protest Guerrilla", sans-serif;
+    font-size: 150px; /* Establece el tamaño de la fuente */
+    margin-top: 20px; /* Ajusta el espacio encima del encabezado */
+    color:#8C0EE1;
+}
+
+
+
+.fondogris h2 {
+    font-size: 35px; /* Tamaño de fuente */
+    font-family: "Outfit", sans-serif; /* Familia de fuentes */
+    text-align: left; /* Alineación del texto a la izquierda */
+    margin-top: 50px; /* Espacio encima del subtítulo */
+    margin-bottom: 30px; /* Espacio debajo del subtítulo */
+    margin-left: 20px; /* Espacio a la izquierda del subtítulo */
+    color:#9049F0 ;
+}
+
+.fondogris h3 {
+    font-size: 35px; /* Tamaño de fuente */
+    font-family: "Outfit", sans-serif; /* Familia de fuentes */
+    text-align: left; /* Alineación del texto a la izquierda */
+    margin-top: 50px; /* Espacio encima del subtítulo */
+    margin-bottom: 30px; /* Espacio debajo del subtítulo */
+    margin-left: 20px; /* Espacio a la izquierda del subtítulo */
+    color:#9049F0 ;
+}
+.fondogris h5 {
+    font-size: 55px; /* Tamaño de fuente */
+     font-family: "Protest Guerrilla", sans-serif; /* Familia de fuentes */
+    text-align: center; /* Alineación del texto al centro */
+    margin-top: 50px; /* Espacio encima del subtítulo */
+    margin-bottom: 30px; /* Espacio debajo del subtítulo */
+    margin-left: 20px; /* Espacio a la izquierda del subtítulo */
+    color:#8C0EE1;
+}
+
+
+
+.fondogris p {
+    font-size: 40px; /* Tamaño de fuente */
+    font-family: "Bree Serif", serif; /* Familia de fuentes */
+    text-align: justify; /* Alineación justificada */
+    line-height: 1.5; /* Interlineado */
+    margin-top: 50px; /* Espacio encima del párrafo */
+    margin-bottom: 30px; /* Espacio debajo del párrafo */
+    margin-left: 20px; /* Espacio a la izquierda del párrafo */
+    margin-right: 20px; /* Espacio a la derecha del párrafo */
+    color: white; /* Color del texto */
+}
+
+
+.fondogris {
+    position: relative; /* Establece la posición relativa */
+    height: 100%; /* Establece la altura de la sección */
+}
+
+.olcyt {
+    width: 2500px; /* Ancho de la imagen */
+    max-height: 2500px; /* Altura máxima de la imagen */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transición suave de tamaño y opacidad */
+    opacity: 0.1; /* Opacidad inicial de la imagen */
+    transform-origin: center center; /* Establece el origen de la transformación en el centro de la imagen */
+    z-index: 0; /* Coloca la imagen en la capa de fondo */
+    position: absolute; /* Establece la posición absoluta */
+    top: 50%; /* Ajusta la posición vertical de la imagen */
+    left: 50%; /* Ajusta la posición horizontal de la imagen */
+    transform: translate(-50%, -50%); /* Centra la imagen */
+}
+
+.olcyt:hover {
+    transform: scale(1.1) translate(-50%, -50%); /* Aumentar el tamaño de la imagen al pasar el mouse y mantenerla centrada */
+    opacity: 0.2; /* Aumentar la opacidad de la imagen al pasar el mouse */
+    z-index: 1; /* Asegura que la imagen esté por encima de otros elementos */
+}
